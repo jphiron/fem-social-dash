@@ -1,13 +1,10 @@
-import { Grid } from "./Dashboard.styles";
+import { Followers } from "../Followers/Followers";
 
 const Dashboard = props => {
   return (
-    <Grid>
-      <div>Facebook</div>
-      <div>Twitter</div>
-      <div>Instagram</div>
-      <div>Youtube</div>
-    </Grid>
+    <>
+      <Followers />
+    </>
   );
 };
 
