@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fem-social-dash/static/css/main.306a2458.css",
-    "main.js": "/fem-social-dash/static/js/main.39b301b9.js",
+    "main.js": "/fem-social-dash/static/js/main.bd6259cc.js",
     "static/js/787.dd9dda7a.chunk.js": "/fem-social-dash/static/js/787.dd9dda7a.chunk.js",
     "index.html": "/fem-social-dash/index.html",
     "static/media/icon-instagram.svg": "/fem-social-dash/static/media/icon-instagram.568b5795d56c7d9247f495cb5488f8be.svg",
@@ -11,11 +11,11 @@
     "static/media/icon-down.svg": "/fem-social-dash/static/media/icon-down.0c77426d8f1ab70c4ae629868c263878.svg",
     "static/media/icon-up.svg": "/fem-social-dash/static/media/icon-up.359200b20d83a37cfb26d6de21236570.svg",
     "main.306a2458.css.map": "/fem-social-dash/static/css/main.306a2458.css.map",
-    "main.39b301b9.js.map": "/fem-social-dash/static/js/main.39b301b9.js.map",
+    "main.bd6259cc.js.map": "/fem-social-dash/static/js/main.bd6259cc.js.map",
     "787.dd9dda7a.chunk.js.map": "/fem-social-dash/static/js/787.dd9dda7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.306a2458.css",
-    "static/js/main.39b301b9.js"
+    "static/js/main.bd6259cc.js"
   ]
 }
