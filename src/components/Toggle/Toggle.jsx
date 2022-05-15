@@ -20,12 +20,13 @@ export const Toggle = props => {
   };
 
   return (
-    <Switch>
+    <Switch htmlFor="theme-switch">
       <Checkbox
         type="checkbox"
         checked={isChecked}
         onClick={handleClick}
         onChange={handleChange}
+        id="theme-switch"
       />
       <Slider />
     </Switch>
