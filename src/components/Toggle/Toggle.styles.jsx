@@ -6,7 +6,11 @@ const Switch = styled.label`
   min-width: 50px;
   height: 25px;
   display: flex;
-  margin-right: 3rem;
+  margin-right: 1.5rem;
+
+  @media screen and (max-width: 538px) {
+    align-self: flex-end;
+  }
 
   &:before,
   &:after {

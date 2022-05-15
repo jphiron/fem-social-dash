@@ -4,15 +4,30 @@ const Header = styled.header`
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 538px) {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
+
+  @media screen and (max-width: 538px) {
+    border-bottom: 1px solid
+      ${({ theme }) =>
+        theme === "dark" ? "hsl(228, 28%, 25%)" : "hsl(228, 12%, 44%)"};
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Title = styled.h1`
