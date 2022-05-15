@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import styled from "styled-components";
 import { ThemeContext } from "../../context/ThemeContext";
 import { Toggle } from "../Toggle";
 import { Header, TextContainer, Title, FollowerCount } from "./TopBar.styles";

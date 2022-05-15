@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Main = styled.div`
+const Main = styled.main`
   color: ${props =>
     props.theme === "dark" ? "hsl(0, 0%, 100%)" : "hsl(230, 17%, 14%)"};
   max-width: 1392px;
