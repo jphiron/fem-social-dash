@@ -28,13 +28,13 @@ const socialImages = {
 
 const FollowersCard = ({ social, handle, followerCount, followerChange }) => {
   const { theme } = useContext(ThemeContext);
-  const getArrow = (count) => {
+  const getArrow = count => {
     if (count < 0) {
       return DownIcon;
     } else if (count > 0) {
       return UpIcon;
     }
-  }
+  };
   return (
     <Card theme={theme} social={social}>
       <Handle theme={theme}>
@@ -51,10 +51,15 @@ const FollowersCard = ({ social, handle, followerCount, followerChange }) => {
           {followerChange === 0 ? (
             "–"
           ) : (
-            <img src={getArrow(followerChange)} alt="Up arrow icon" />
+            <img
+              src={getArrow(followerChange)}
+              alt={followerChange < 0 ? "Down arrow icon" : "Up arrow icon"}
+            />
           )}
         </FollowersChangeIcon>
-        <FollowersChangeCount>{Math.abs(followerChange)} Today</FollowersChangeCount>
+        <FollowersChangeCount>
+          {Math.abs(followerChange)} Today
+        </FollowersChangeCount>
       </FollowersChange>
     </Card>
   );

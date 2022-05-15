@@ -27,13 +27,13 @@ const socialImages = {
 
 const OverviewCard = ({ metric, social, count, change }) => {
   const { theme } = useContext(ThemeContext);
-  const getArrow = (count) => {
+  const getArrow = count => {
     if (count < 0) {
       return DownIcon;
     } else if (count > 0) {
       return UpIcon;
     }
-  }
+  };
   return (
     <Card theme={theme}>
       <CardGrid>
@@ -41,10 +41,13 @@ const OverviewCard = ({ metric, social, count, change }) => {
         <SocialIcon src={socialImages[social]} alt={`${social} logo`} />
         <Count>{count}</Count>
         <Change change={change} theme={theme}>
-          { change === 0 ? (
-            <div style={{marginRight: ".25rem"}}>-</div>
-            ) : (
-            <ChangeIcon src={getArrow(change)} />
+          {change === 0 ? (
+            <div style={{ marginRight: ".25rem" }}>-</div>
+          ) : (
+            <ChangeIcon
+              src={getArrow(change)}
+              alt={change < 0 ? "Down arrow icon" : "Up arrow icon"}
+            />
           )}
           <ChangeValue>{`${Math.abs(change)}%`}</ChangeValue>
         </Change>
